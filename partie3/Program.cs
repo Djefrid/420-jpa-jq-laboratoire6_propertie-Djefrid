@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace partie1
+namespace partie3
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-
         }
     }
 }
