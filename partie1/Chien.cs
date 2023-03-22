@@ -10,6 +10,7 @@ namespace ChienNamespace
     {
         public string Nom { get; set; }
         public string Humeur { get; set; }
+        public string MeilleurAmie { get; set; }
 
         public Chien() 
         {

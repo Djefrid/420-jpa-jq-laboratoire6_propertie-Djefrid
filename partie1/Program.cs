@@ -38,15 +38,34 @@ namespace AmitieNamespace
                 Humeur = "joyeux"
             };
 
-            if (chat1.Humeur == chien1.Humeur)
-                Console.WriteLine($"{chat.Nom} et {chien1.Nom} sont amie");
-            else
-                Console.WriteLine($"{chat.Nom} et {chien1.Nom} ne sont pas des amie");
+            if (chat1.Humeur == "fachée" && chien1.Humeur == "joyeux")
+            {
+                chat1.MeilleurAmie = "aucun";
+                Console.WriteLine($"{chat1.Nom} n'a {chat1.MeilleurAmie} meilleur amie");
+            }
+            if (chat.Humeur == "joyeux" && chien1.Humeur == "joyeux")
+            {
+                chat.MeilleurAmie = chien1.Nom;
+                Console.WriteLine($"{chat.MeilleurAmie} devient l'amie de {chat.Nom}");
+            }
+            if (chat.Humeur == "joyeux" && chien1.Humeur == "joyeux")
+            {
+                chien1.MeilleurAmie = chat.Nom;
+                Console.WriteLine($"{chien1.MeilleurAmie} devient l'amie de {chien1.Nom}");
+            }
+            if (chien1.MeilleurAmie != "" && chat.MeilleurAmie !="")
+            {
+                chien2.MeilleurAmie = "aucun";
+                Console.WriteLine($"{chien2.Nom} n'a {chien2.MeilleurAmie} d'amie");
+            }
+            
+            chien1.Humeur = "fachée";
 
-            if (chat.Humeur == chien1.Humeur)
-                Console.WriteLine($"{chat.Nom} et {chien1.Nom} sont amie");
-            else
-                Console.WriteLine($"{chat.Nom} et {chien1.Nom} ne sont pas des amie");
+            if(chien1.Humeur == "fachée")
+            {
+                chien1.MeilleurAmie = chien2.Nom;
+                Console.WriteLine($"c'est maintenant {chien1.MeilleurAmie} le nouvelle meilleur ami de {chien1.Nom}");
+            }
 
         }
     }
