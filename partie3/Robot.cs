@@ -11,10 +11,14 @@ using PieceTransportNamespace;
 
 namespace partie3
 {
-    internal class Program
+    internal class Robot
     {
-        static void Main(string[] args)
+        private string Nom { get; set; }
+        private List<Piece> Pieces { get; set; }
+
+        public Robot() 
         {
+
         }
     }
 }
