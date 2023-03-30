@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PieceNamespace;
-using PieceDestructionNamespace;
-using PieceConstructionNamespace;
-using PieceVitesseNamespace;
-using PieceTransportNamespace;
+using VilleNamespace;
+using RobotNamespace;
+using Console = Colorful.Console;
 
 namespace partie3
 {
@@ -15,6 +14,12 @@ namespace partie3
     {
         static void Main(string[] args)
         {
+            Simulateur simulateur = new Simulateur();
+
+            simulateur.GererReparation(simulateur.Ville,simulateur.Usine);
+
+            
+            Console.ReadKey();
         }
     }
 }

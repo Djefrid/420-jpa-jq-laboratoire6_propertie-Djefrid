@@ -98,6 +98,7 @@ namespace partie2
             TestHumaain();
             TestFiggle();
             TestAlba();
+            Console.ReadKey();
         }
     }
 }

@@ -4,13 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace partie3
+namespace PieceNamespace
 {
     internal class PieceTransport : Piece
     {
+        public string Type { get; set; }
+
         public PieceTransport() : base() 
         {
+            Type = "transport";
+        }
 
+        public override string ToString()
+        {
+            return $"type : {Type}";
         }
     }
 }

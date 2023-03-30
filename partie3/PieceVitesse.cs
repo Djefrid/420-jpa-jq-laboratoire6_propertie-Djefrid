@@ -4,13 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace partie3
+namespace PieceNamespace
 {
     internal class PieceVitesse : Piece
     {
-        public PieceVitesse() 
-        {
+        public string Type { get; set; }
 
+        public PieceVitesse() : base()
+        {
+            Type = "vitesse";
+        }
+
+        public override string ToString()
+        {
+            return $"type : {Type}";
         }
     }
 }
